@@ -1,0 +1,132 @@
+
+.conf{
+    position: absolute;
+
+    width: 700px;
+    height: 500px;
+
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -350px;
+
+    border: 2px solid black;
+    background-color: white;
+}
+
+.text{
+    width: 644px;
+    height: 55px;
+    margin: 20px auto;
+
+    border-bottom: 1px solid rgb(69, 69, 69);
+    border-top: 1px solid rgb(69, 69, 69);
+}
+        h2{
+            display: inline-block;
+            line-height: 60px;
+
+            padding-right: 30px;
+        }
+        #registration{
+            display: flex;
+            justify-content: space-between;
+        }
+        #already, #new{
+            width: 80px;
+            height: 35px;
+            font-size: 1.0rem;
+            text-align: center;
+        }
+
+fieldset{
+    position: absolute;
+
+    width: 584px;
+    height: 300px;
+
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -292px;
+
+    border: none;
+}
+input{
+    margin-bottom: 15px;
+    accent-color: rgb(46, 46, 46);
+}
+.inpt{
+    width: 584px;
+    height: 350px;
+
+    margin: 0px auto;
+    line-height: 20px;
+}
+    .add{
+        width: 584px;
+        height: 280px;
+
+        line-height: 25px;
+
+        padding-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+        .add input{
+            width: 235px;
+            height: 28px;
+
+            text-align: center;
+
+            border-radius: 3px;
+        }
+    
+    #lable{
+        height: 5px;
+    }
+    
+.list{
+    overflow-y: scroll;
+    width: 584px;
+    height: 300px;
+
+    border: 1px solid black;
+}
+    table{
+        border-collapse: collapse;
+        text-align: center;
+        width: 569px;
+    }
+        td, th{
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+
+            line-height: 20px;
+
+            height: 40px;
+        }
+        th{
+            background-color: rgb(223, 223, 223);
+        }
+        td{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+            
+
+.selct{
+    width: 50px;
+    height: 35px;
+
+    margin: -20px auto;
+}
+    .selct input{
+        width: 50px;
+        height: 35px;
+
+        font-size: 1rem;
+        color: rgb(62, 62, 62);
+
+        border-radius: 6px;
+    }

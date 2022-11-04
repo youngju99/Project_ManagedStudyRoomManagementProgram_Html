@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>비밀번호 재설정</title>
+
+        <link href="./css/standard.css" rel="stylesheet">
+        <link href="./css/reset_pw.css" rel="stylesheet">
+
+        <script>
+            
+        </script>
+
+    </head>
+    <body>
+        <div class="conf">
+
+            <fieldset class="box">
+
+                <form action="./index.html" method="get">
+                    <div class="text">
+                        <h2>비밀번호 재설정</h2>
+                    </div>
+
+                    <div class="inpt">
+                        <div class="add">
+                            <label for="new_pwd">새 비밀번호</label><br/>
+                            <input type="password" name="new_pwd" id="new_pwd" minlength="8" maxlength="16" placeholder="********" required><br/>
+                            <div class="condition">
+                                <p>✔️ 8자리 이상, 16자리 이하</p>
+                                <p>✔️ 특수문자 !,?,@ 중 하나 이상 포함</p>
+                            </div><br/>
+
+                            <label for="check">새 비밀번호 확인</label><br/>
+                            <input type="password" name="check" id="check" minlength="8" maxlength="16" placeholder="********" required><br/>
+                        </div>
+                    </div>
+
+                    <div class="selct">
+                        <input type="button" value="CANCEL" onclick="location.href='./index.html';">
+                        <input type="submit" value="SUBMIT">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

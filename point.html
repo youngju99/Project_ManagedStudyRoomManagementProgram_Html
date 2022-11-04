@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>상벌점 관리</title>
+
+        <link href="./css/standard.css" rel="stylesheet">
+        <link href="./css/point.css" rel="stylesheet">
+
+        <script>
+            
+        </script>
+
+    </head>
+    <body>
+        <div class="conf">
+
+            <div class="text">
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;상벌점 관리</h2>
+            </div>
+
+            <fieldset>
+
+                <form action="./main.html" method="get">
+
+                    <div class="inpt">
+
+                        <div class="add">
+
+                            <label for="name"><div id="lable">이름</div></label><br/>
+                            <input type="text" name="name" id="name" required><br/><br/>
+    
+                            <label for="phone"><div id="lable">휴대폰 번호</div></label><br/>
+                            <input type="text" name="phone" id="phone" minlength="3" maxlength="3" placeholder="010" required>&nbsp;&nbsp;-&nbsp;&nbsp;
+                            <input type="text" name="phone1" id="phone" minlength="4" maxlength="4" placeholder="0000" required>&nbsp;&nbsp;-&nbsp;&nbsp;
+                            <input type="text" name="phone2" id="phone" minlength="4" maxlength="4" placeholder="0000" required><br/><br/>
+    
+                            <label for="minus"><div id="lable">벌점 부과 항목</div></label><br/>
+                            <input type="checkbox" name="minus" id="minus" value="10"> 결석&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="minus" id="minus" value="7"> 지각&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="minus" id="minus" value="6"> 휴대폰 미제출&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="minus" id="minus" value="4"> 전자기기 사용&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="minus" id="minus" value="2"> 조퇴<br/><br/>
+                            
+                            <label for="plus"><div id="lable">상점 부과 항목</div></label><br/>
+                            <input type="radio" name="plus" id="plus" value="2"> 4교시 연속 출석&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="plus" id="plus" value="5"> 7교시 연속 출석&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="plus" id="plus" value="10"> 10교시 연속 출석
+                            
+                        </div>
+                    </div>
+
+                    <div class="selct">
+                        <input type="button" value="취소" onclick="location.href='./main.html';">
+                        <input type="submit" value="적용">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

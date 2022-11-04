@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>SMS 발송</title>
+
+        <link href="./css/standard.css" rel="stylesheet">
+        <link href="./css/sms.css" rel="stylesheet">
+
+        <script>
+            
+        </script>
+
+    </head>
+    <body>
+        <div class="conf">
+
+            <div class="text">
+                <!--db에서 전여건수에 대한 값을 가져와 출력해줘야 함-->
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;SMS 발송 ( 잔여건수 : 1000 )</h2>
+            </div>
+
+            <fieldset>
+                <!--yes에서 no로 옮길 항목에 체크해서 넘겨주기-->
+                <form action="./sms.html" method="get">
+                    
+                    <div class="list">
+
+                        <!--대기자-->
+                        <div class="yes">
+                            <h3>SMS 발송 대기자 목록</h3>
+                            <div class="box">
+                                <table border="0">
+                                    <tr>
+                                        <th>선택</th>
+                                        <th>이름</th>
+                                        <th>좌석 번호</th>
+                                    </tr>
+                                    <!--이런식으로 값이 들어가야 된다.-->
+                                    <tr>
+                                        <td><input type="checkbox" value="5"></td>
+                                        <td>홍길동</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="18"></td>
+                                        <td>유자바</td>
+                                        <td>18</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="25"></td>
+                                        <td>김자바</td>
+                                        <td>25</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="16"></td>
+                                        <td>김철수</td>
+                                        <td>16</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="4"></td>
+                                        <td>김영주</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="17"></td>
+                                        <td>김덕배</td>
+                                        <td>17</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="3"></td>
+                                        <td>이장군</td>
+                                        <td>3</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="check">
+                            <input type="submit" value=" ➡️ ">
+                        </div>
+
+                        <!--대기자 중 제외할 목록 받아오기-->
+                        <div class="no">
+                            <h3>공부 중인 회원 목록</h3>
+                            <div class="box">
+                                <table border="0">
+                                    <tr>
+                                        <th>선택</th>
+                                        <th>이름</th>
+                                        <th>좌석 번호</th>
+                                    </tr>
+                                    <!--해당 교시에 입실 처리를 하지 않고, 착석해 공부 중인 회원들을 전송 목록에서 제외시켜준다.-->
+                                    <tr>
+                                        <td><input type="checkbox" value="8"></td>
+                                        <td>이덕화</td>
+                                        <td>8</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" value="22"></td>
+                                        <td>이소라</td>
+                                        <td>22</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+                <!--yes인 회원들에게 메세지 전송-->
+                <form action="./main.html" method="get">
+
+                    <div class="msg">
+                        <label>교시 선택 &nbsp;: &nbsp;
+                            <select name="class">
+                                <option selected>1교시</option>
+                                <option>2교시</option>
+                                <option>3교시</option>
+                                <option>4교시</option>
+                                <option>5교시</option>
+                                <option>6교시</option>
+                                <option>7교시</option>
+                                <option>8교시</option>
+                                <option>9교시</option>
+                                <option>10교시</option>
+                            </select>
+                        </label><br/><br/>
+
+                        <div class="send_msg">
+                            <label>&nbsp;&nbsp;&nbsp;&nbsp;메세지 &nbsp;: &nbsp;
+                                <textarea name="send_msg" cols="50" rows="10"></textarea>
+                            </label>
+                        </div>
+                        
+                        <div class="selct">
+                            <input type="submit" value="SMS 전송">
+                            <input type="button" value="취소" onclick="location.href='./main.html';">
+                        </div>
+                    </div>
+
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

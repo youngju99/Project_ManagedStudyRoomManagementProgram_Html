@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>결제 내역</title>
+
+        <link href="./css/standard.css" rel="stylesheet">
+        <link href="./css/list_payment.css" rel="stylesheet">
+
+        <script>
+            
+        </script>
+
+    </head>
+    <body>
+        <div class="conf">
+
+            <div class="text">
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;결제 내역</h2>
+            </div>
+
+            <fieldset>
+                <form action="./main.html" method="get">
+                    <div class="inpt">
+                        <div class="add">
+                            <div class="list">
+                                <table border="0">
+                                    <tr>
+                                        <th style="width: 90px;">이름</th>
+                                        <th style="width: 78px;">좌석 번호</th>
+                                        <th style="width: 91px;">등록 기간</th>
+                                        <th style="width: 180px;">결제 일시</th>
+                                        <th style="width: 50px;">결제</th>
+                                    </tr>
+                                    <!--이런식으로 결제 내역이 출력되어야 함(값이 들어가야 됨)-->
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>5</td>
+                                        <td>2022-09-19<br/>~<br/>2023-03-09</td>
+                                        <td>2022-11-01<br/>15 : 46 : 21</td>
+                                        <td>완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>김자바</td>
+                                        <td>3</td>
+                                        <td>2022-09-19<br/>~<br/>2022-10-01</td>
+                                        <td>2022-11-01<br/>15 : 46 : 19</td>
+                                        <td>완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>김시퀄</td>
+                                        <td>11</td>
+                                        <td>2021-10-19<br/>~<br/>2022-03-09</td>
+                                        <td>2021-10-03<br/>13 : 46 : 21</td>
+                                        <td>미결제</td>
+                                    </tr>
+                                    <tr>
+                                        <td>유자바</td>
+                                        <td>25</td>
+                                        <td>2021-10-19<br/>~<br/>2022-03-09</td>
+                                        <td>2021-10-03<br/>13 : 46 : 21</td>
+                                        <td>완료</td>
+                                    </tr>
+                                    
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="selct">
+                        <input type="submit" value="뒤로">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

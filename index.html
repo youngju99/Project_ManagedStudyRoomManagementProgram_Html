@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>BOSS</title>
+        
+        <link href="./css/index.css" rel="stylesheet">
+
+        <!--JQuery사용 방법1, 방법2-->
+        <!-- (1) <script src="https://code.jquery.com/jquery-migrate-1.4.1.js"></script>-->
+        <!-- (2) <script src="../../js/jquery-migrate-1.4.1.min.js"></script>-->
+
+    </head>
+
+    <body>
+        <div class="total">
+            <div class="name">
+                <h1>BOSS</h1>
+            </div>
+            
+            <form action="./main.html" method="get">
+                <div class="login">
+                    <div class="id">
+                        <label for="user"><img src="./images/id.png" id="id_img"></label>
+                        <input type="text" name="user" id="user" placeholder="&nbsp;&nbsp;ID" required>
+                    </div>
+                    <div class="long">
+                        <div class="pw">
+                            <label for="pwd"><img src="./images/key.png" id="pwd_img"></label>
+                            <input type="password" name="pwd" id="pwd" minlength="8" maxlength="16" placeholder="&nbsp;&nbsp;********" required>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" name="submit" id="submit" value="Sign in">
+                        </div>
+                    </div>
+                    <div class="etc">
+                        <div class="radio">
+                            <input type="checkbox" name="save" id="save">
+                            <label for="save" id="text">&nbsp;아이디 저장</label>
+                        </div>
+                        <div class="reset_pw">
+                            <a href="./identify.html" id="reset">비밀번호 재설정</a>
+                        </div>             
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <div>
+                Copyright &copy; gongu.copyright/구름 이미지_051(쉬운편집) All Right Reserved&nbsp;&nbsp;|&nbsp;&nbsp;
+                Copyright &copy;  flaticon/free-icons/password/id.png All Right Reserved&nbsp;&nbsp;|&nbsp;&nbsp;
+                Copyright &copy;  flaticon/free-icons/password/id.png All Right Reserved
+                Copyright &copy;  google font - Jua All Right Reserved
+            </div>
+        </footer> 
+    </body>
+</html>

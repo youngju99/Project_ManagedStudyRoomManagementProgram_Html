@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>기존 회원 검색</title>
+
+        <link href="./css/standard.css" rel="stylesheet">
+        <link href="./css/registration_already.css" rel="stylesheet">
+
+        <script>
+            
+        </script>
+
+    </head>
+    <body>
+        <div class="conf">
+
+            <div class="text">
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;기존 회원 검색</h2>
+            </div>
+
+            <fieldset>
+
+                <form action="./registration_already.html" method="get">
+                    <label for="name">이름 &nbsp;: &nbsp;</label>
+                    <input type="search" name="name" id="name"> &nbsp;
+                    <input type="submit" value="검색" id="search_name">
+                </form>
+
+
+                <form action="./add_member_payment.html" method="get">
+                    <div class="inpt">
+                        <div class="add">
+                            <div class="list">
+                                <table border="0">
+                                    <tr>
+                                        <th style="width: 80px;">발신자 선택</th>
+                                        <th style="width: 88px;">이름</th>
+                                        <th style="width: 41px;">성별</th>
+                                        <th style="width: 180px;">사용자 휴대폰</th>
+                                        <th style="width: 180px;">보호자 휴대폰</th>
+                                    </tr>
+                                    <!--이런식으로 회원 목록이 출력되어야 함(값이 들어가야 됨)-->
+                                    <tr>
+                                        <label for="list"><td id="check"><input type="radio" name="list"></td></label>
+                                        <td id="user_name">홍길동</td>
+                                        <td id="user_gender">여</td>
+                                        <td id="user_phone">010-1718-1918</td>
+                                        <td id="parent_phone">010-1718-1918</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <label for="list"><td id="check"><input type="radio" name="list"></td></label>
+                                        <td id="user_name">김철수</td>
+                                        <td id="user_gender">남</td>
+                                        <td id="user_phone">010-1111-2091</td>
+                                        <td id="parent_phone">010-6968-2322</td>
+                                    </tr>
+                                    <tr>
+                                        <label for="list"><td id="check"><input type="radio" name="list"></td></label>
+                                        <td id="user_name">김자바</td>
+                                        <td id="user_gender">남</td>
+                                        <td id="user_phone">010-2424-0020</td>
+                                        <td id="parent_phone">010-4457-0998</td>
+                                    </tr>
+                                    <tr>
+                                        <label for="list"><td id="check"><input type="radio" name="list"></td></label>
+                                        <td id="user_name">김자바</td>
+                                        <td id="user_gender">여</td>
+                                        <td id="user_phone">010-1313-1111</td>
+                                        <td id="parent_phone">010-4452-3433</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="selct">
+                        <input type="button" value="취소" onclick="location.href='./add_member_payment.html';">
+                        <input type="submit" value="적용">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

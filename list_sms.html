@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>SMS 전송 내역</title>
+
+        <link href="./css/standard.css" rel="stylesheet">
+        <link href="./css/list_sms.css" rel="stylesheet">
+
+        <script>
+            
+        </script>
+
+    </head>
+    <body>
+        <div class="conf">
+
+            <div class="text">
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;SMS 전송 내역</h2>
+            </div>
+
+            <fieldset>
+                <form action="./main.html" method="get">
+                    <div class="inpt">
+                        <div class="add">
+                            <div class="list">
+                                <table border="0">
+                                    <tr>
+                                        <th style="width: 70px;">이름</th>
+                                        <th style="width: 100px;">발신 번호</th>
+                                        <th style="width: 190px;">메세지</th>
+                                        <th style="width: 81px;">전송 일시</th>
+                                        <th style="width: 50px;">전송</th>
+                                    </tr>
+                                    <!--이런식으로 sms전송 내역이 출력되어야 함(값이 들어가야 됨): 학생, 부모님 모두에게 전송함-->
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>010-1123-2345</td>
+                                        <td>길동 학생 1교시 출석하지 않았습니다. - 관리형 독서실 -</td>
+                                        <td>2022-11-01<br/>16 : 46 : 21</td>
+                                        <td>완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>010-6578-2345</td>
+                                        <td>길동 학생 1교시 출석하지 않았습니다. - 관리형 독서실 -</td>
+                                        <td>2022-11-01<br/>16 : 46 : 21</td>
+                                        <td>완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>김시퀄</td>
+                                        <td>010-0000-2222</td>
+                                        <td>시퀄 학생 1교시 출석하지 않았습니다. - 관리형 독서실 -</td>
+                                        <td>2022-11-01<br/>15 : 46 : 21</td>
+                                        <td>완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>김시퀄</td>
+                                        <td>010-1111-2222</td>
+                                        <td>시퀄 학생 1교시 출석하지 않았습니다. - 관리형 독서실 -</td>
+                                        <td>2022-11-01<br/>15 : 46 : 21</td>
+                                        <td>완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>유자바</td>
+                                        <td>010-2312-9900</td>
+                                        <td>자바 학생 1교시 출석하지 않았습니다. - 관리형 독서실 -</td>
+                                        <td>2022-11-01<br/>09 : 46 : 21</td>
+                                        <td>완료</td>
+                                    </tr>
+                                    <tr>
+                                        <td>유자바</td>
+                                        <td>010-3456-9900</td>
+                                        <td>자바 학생 1교시 출석하지 않았습니다. - 관리형 독서실 -</td>
+                                        <td>2022-11-01<br/>09 : 46 : 21</td>
+                                        <td>완료</td>
+                                    </tr>
+                                    
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="selct">
+                        <input type="submit" value="뒤로">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

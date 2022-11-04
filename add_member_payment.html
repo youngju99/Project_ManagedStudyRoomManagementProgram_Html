@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>회원등록 및 결제</title>
+
+        <link href="./css/standard.css" rel="stylesheet">
+        <link href="./css/add_member_payment.css" rel="stylesheet">
+
+        <script>
+            
+        </script>
+
+    </head>
+    <body>
+        <div class="conf">
+
+            <div class="text">
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;결제</h2>
+                <div class="registration">
+                    <input type="button" id="already" value="기존회원" onclick="location.href='./registration_already.html';">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" id="new" value="신규회원" onclick="location.href='./registration_new.html';">&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+
+            <fieldset>
+
+                <form action="./main.html" method="get">
+
+                    <div class="inpt">
+
+                        <div class="add">
+
+                            <label for="name"><div id="lable">이름</div></label><br/>
+                            <input type="text" name="name" id="name" required><br/>
+    
+                            <label for="gender"><div id="lable">성별</div></label><br/>
+                            <input type="radio" name="gender" id="gender" value="m"> 남&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="gender" id="gender" value="w"> 여<br/>
+
+                            <label for="Uphone"><div id="lable">사용자 휴대폰</div></label><br/>
+                            <input type="text" name="Uphone" id="Uphone" minlength="3" maxlength="3" placeholder="010" required>&nbsp;&nbsp;-&nbsp;&nbsp;
+                            <input type="text" name="Uphone1" id="Uphone1" minlength="4" maxlength="4" placeholder="0000" required>&nbsp;&nbsp;-&nbsp;&nbsp;
+                            <input type="text" name="Uphone2" id="Uphone2" minlength="4" maxlength="4" placeholder="0000" required><br/>
+                            
+                            <label for="Pphone"><div id="lable">보호자 휴대폰</div></label><br/>
+                            <input type="text" name="Pphone" id="Pphone" minlength="3" maxlength="3" placeholder="010" required>&nbsp;&nbsp;-&nbsp;&nbsp;
+                            <input type="text" name="Pphone1" id="Pphone1" minlength="4" maxlength="4" placeholder="0000" required>&nbsp;&nbsp;-&nbsp;&nbsp;
+                            <input type="text" name="Pphone2" id="Pphone2" minlength="4" maxlength="4" placeholder="0000" required><br/>
+                            
+                            <label for="sms"><div id="lable">SMS 사용</div></label><br/>
+                            <input type="radio" name="sms" id="sms" value="y"> Yes&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="sms" id="sms" value="n"> No<br/>
+                            
+                            <label for="memo"><div id="lable">메모</div></label><br/>
+                            <textarea name="memo" cols="50" rows="10"></textarea>
+                            <br/>
+
+                            <label for="period"><div id="lable_period">기간권</div>
+                                <select name="period">
+                                    <option selected>28일권 - 294,000원</option>
+                                    <option>21일권 - 252,000원</option>
+                                    <option>14일권 - 175,000원</option>
+                                    <option>7일권 - 91,000원</option>
+                                    <option>1일권 - 13,000원</option>
+                                </select>
+                            </label><br/>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="selct">
+                        <input type="button" value="취소" onclick="location.href='./main.html';">
+                        <input type="submit" value="적용">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

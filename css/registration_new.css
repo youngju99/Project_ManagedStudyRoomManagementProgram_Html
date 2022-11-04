@@ -1,0 +1,128 @@
+
+.conf{
+    position: absolute;
+
+    width: 700px;
+    height: 750px;
+
+    top: 50%;
+    left: 50%;
+    margin-top: -375px;
+    margin-left: -350px;
+
+    border: 2px solid black;
+    background-color: white;
+}
+
+.text{
+    width: 644px;
+    height: 55px;
+    margin: 20px auto;
+
+    border-bottom: 1px solid rgb(69, 69, 69);
+    border-top: 1px solid rgb(69, 69, 69);
+}
+        h2{
+            display: inline-block;
+            line-height: 60px;
+
+            padding-right: 30px;
+        }
+        #registration{
+            display: flex;
+            justify-content: space-between;
+        }
+        #already, #new{
+            width: 80px;
+            height: 35px;
+            font-size: 1.0rem;
+            text-align: center;
+        }
+
+fieldset{
+    position: absolute;
+
+    width: 584px;
+    height: 550px;
+
+    top: 50%;
+    left: 50%;
+    margin-top: -275px;
+    margin-left: -292px;
+
+    border: none;
+}
+input{
+    margin-bottom: 15px;
+}
+.inpt{
+    width: 584px;
+    height: 350px;
+
+    margin: 0px auto;
+    line-height: 20px;
+}
+    .add{
+        width: 584px;
+        height: 280px;
+
+        line-height: 25px;
+
+        padding-top: 20px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+        .add input{
+            width: 235px;
+            height: 28px;
+
+            text-align: center;
+
+            border-radius: 3px;
+        }
+    #Uphone, #Uphone1, #Uphone2, #Pphone, #Pphone1, #Pphone2{
+        width: 80px;
+    }
+    #gender, #sms{
+        width: 18px;
+        margin-right: 5px;
+        accent-color: rgb(46, 46, 46);
+        vertical-align: -8px; /*label*/
+    }
+    #lable{
+        height: 5px;
+    }
+    #gender input, #sms input{
+        vertical-align: text-top; /*input*/
+    }
+    
+    textarea{
+        width: 583px;
+        height: 90px;
+        font-size: 1.2rem;
+        overflow: scroll;
+    }
+
+input:focus, textarea:focus{
+    border-color: black;
+    outline: none;
+}
+
+.selct{
+    display: flex;
+    justify-content: space-between;
+
+    width: 150px;
+    height: 35px;
+
+    margin: 230px auto;
+}
+    .selct input{
+        width: 50px;
+        height: 35px;
+
+        font-size: 1rem;
+        color: rgb(62, 62, 62);
+
+        border-radius: 6px;
+    }
