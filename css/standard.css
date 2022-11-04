@@ -45,3 +45,8 @@ input:focus, select:focus, textarea:focus{
     outline: none;
     accent-color: rgb(46, 46, 46);
 }
+
+
+input, textarea, select{
+    border: 0px;
+}
