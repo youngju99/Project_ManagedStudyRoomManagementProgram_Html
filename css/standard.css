@@ -49,3 +49,7 @@ input:focus, select:focus, textarea:focus{
 input, select, textarea{
     accent-color: rgb(46, 46, 46);
 }
+
+input{
+    background-color: rgb(240, 240, 240);
+}
