@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 body{
     background-image: url('../images/구름.jpg');
-    font-family: 'Jua', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 span{
@@ -30,13 +30,10 @@ span{
 
     top: 50%;
     left: 50%;
-    margin: -490px 0px 0px -500px;
-
-    /*background-color: yellow;*/
+    margin: -518px 0px 0px -500px;
 }
 .name h1{
         text-align: center;
-
     }
 
 .login{
@@ -72,7 +69,7 @@ span{
         height: 32px;
         width: 35px;
 
-        vertical-align: text-top;
+        vertical-align: -19px;
 
         border-radius: 3px;
 
@@ -105,7 +102,7 @@ span{
             height: 22px;
             width: 25px;
 
-            vertical-align: text-top;
+            vertical-align: -19px;
 
             padding: 5px;
 
@@ -142,7 +139,7 @@ span{
     .radio{
         float: left;
 
-        width: 90px;
+        width: 130px;
 
         margin-left: 5px;
         font-size: 0.8rem;
@@ -155,7 +152,7 @@ span{
             vertical-align: text-top; /*input*/
         }
         #text{
-            vertical-align: 0px; /*label*/
+            vertical-align: 3px; /*label*/
         }
     
     .reset_pw{
@@ -167,7 +164,7 @@ span{
         #reset{
             height: 16px;
             color: white;
-            margin-left: 55px;
+            margin-left: 7px;
             text-decoration: none;
         }
 
