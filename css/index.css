@@ -129,7 +129,7 @@ span{
 
             background-color: rgb(46, 46, 46);
             color: white;
-            vertical-align: -5px;
+            vertical-align: -6px;
         }
 .etc{
     width: 250px;
@@ -184,3 +184,7 @@ input:focus{
     border-color: black;
     outline: none;
 }  
+
+input, textarea, select{
+    border: 0px;
+}
